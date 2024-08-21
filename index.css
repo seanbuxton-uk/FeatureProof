@@ -1,0 +1,182 @@
+.powered-by-wowcoach {
+  display: inline-block;
+  max-width: 100%;
+}
+.client-wins,
+.powered-by-wowcoach {
+  position: relative;
+  line-height: 120%;
+  font-weight: 500;
+}
+.wins {
+  width: 177px;
+  border-radius: 50px;
+  border: 2px solid #d9d9d9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 7px 18px;
+  color: var(--color-white);
+}
+.shutterstock-1427847023-icon {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  border-radius: var(--br-481xl);
+  object-fit: cover;
+  min-height: 150px;
+}
+.made-weight-won-fight {
+  margin: 0;
+}
+.client-win {
+  margin: 0;
+  font-size: var(--font-size-11xl);
+  font-family: var(--font-poppins);
+  color: var(--color-dimgray);
+}
+.made-weight-won-container {
+  height: 150px;
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  min-width: 288px;
+  max-width: 100%;
+}
+.shutterstock-1427847023-parent {
+  align-self: stretch;
+  border-radius: var(--br-xl);
+  background-color: var(--color-darkslategray);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) var(--padding-31xl);
+  box-sizing: border-box;
+  gap: var(--gap-31xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-16xl);
+  color: var(--color-white);
+  font-family: var(--font-gentium-basic);
+}
+.didnt-feel-hungry-container {
+  max-width: 100%;
+}
+.didnt-feel-hungry-container,
+.i-was-able-container {
+  height: 150px;
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  min-width: 315px;
+}
+.frame-section {
+  align-self: stretch;
+  border-radius: var(--br-xl);
+  background-color: var(--color-darkslategray);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) var(--padding-31xl);
+  gap: var(--gap-31xl);
+  text-align: left;
+  font-size: var(--font-size-16xl);
+  color: var(--color-white);
+  font-family: var(--font-gentium-basic);
+}
+.first-ko-container,
+.main {
+  max-width: 100%;
+  display: flex;
+}
+.first-ko-container {
+  height: 150px;
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  align-items: center;
+  min-width: 133px;
+}
+.main {
+  width: 885px;
+  background-color: #1d1d1d;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-31xl);
+  box-sizing: border-box;
+  gap: var(--gap-31xl);
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-dimgray);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 750px) {
+  .made-weight-won-container {
+    font-size: var(--font-size-5xl);
+    line-height: 42px;
+  }
+  .shutterstock-1427847023-parent {
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+  .didnt-feel-hungry-container,
+  .i-was-able-container {
+    font-size: var(--font-size-5xl);
+    line-height: 42px;
+  }
+  .frame-section {
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+  .first-ko-container {
+    font-size: var(--font-size-5xl);
+    line-height: 42px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .client-wins,
+  .powered-by-wowcoach {
+    font-size: var(--font-size-xl);
+    line-height: 24px;
+  }
+  .made-weight-won-container {
+    font-size: var(--font-size-lg);
+    line-height: 31px;
+  }
+  .shutterstock-1427847023-parent {
+    gap: var(--gap-6xl);
+  }
+  .didnt-feel-hungry-container,
+  .i-was-able-container {
+    font-size: var(--font-size-lg);
+    line-height: 31px;
+  }
+  .frame-section {
+    gap: var(--gap-6xl);
+  }
+  .first-ko-container {
+    font-size: var(--font-size-lg);
+    line-height: 31px;
+  }
+  .main {
+    gap: var(--gap-6xl);
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
