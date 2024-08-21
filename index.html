@@ -16,30 +16,48 @@
     />
   </head>
   <body>
-    <div class="main">
-      <div class="powered-by-wowcoach">Powered by WOWcoach ⚡️</div>
-      <div class="wins">
-        <div class="client-wins">Client wins</div>
-      </div>
-      <section class="shutterstock-1427847023-parent">
-        <img
-          class="shutterstock-1427847023-icon"
-          loading="lazy"
-          alt=""
-          src="./public/shutterstock-1427847023@2x.png"
-        />
-
-        <div class="made-weight-won-fight-client-wrapper">
-          <div class="made-weight-won-container">
-            <span>
-              <p class="made-weight-won-fight">
-                <b>Made weight, won fight</b>
-              </p>
-              <p class="client-win">Client win</p>
-            </span>
-          </div>
+    <div class="habit-tracker">
+      <div class="habit-tracker1">Habit tracker</div>
+      <section class="habit-1">
+        <div class="status-null-wrapper">
+          <div class="status-null" id="statusNull"></div>
         </div>
+        <b class="eat-five-fruit">Eat five fruit and veg per day</b>
       </section>
     </div>
+
+    <div id="doneContainer" class="popup-overlay" style="display: none">
+      <div class="done">
+        <div class="status-done"></div>
+      </div>
+    </div>
+
+    <script>
+      var statusNull = document.getElementById("statusNull");
+      if (statusNull) {
+        statusNull.addEventListener("click", function () {
+          var popup = document.getElementById("doneContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "";
+            popupStyle.alignItems = "flex-start";
+            popupStyle.justifyContent = "";
+          }
+          popup.removeAttribute("closable");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+    </script>
   </body>
 </html>
